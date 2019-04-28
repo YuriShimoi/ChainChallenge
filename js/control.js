@@ -40,7 +40,7 @@ function activateControl(controlStat, id){
       case '#theme':
         if(themeSet == 0){ // Black theme to White
           themeSet = 1;
-          $('body').css('background', 'var(--background-color) url("background-white.png") repeat');
+          $('body').css('background', 'var(--background-color) url("https://i.postimg.cc/Y2FmMxPt/background-white.png") repeat');
           document.body.style.setProperty('--background-color', '#dddddd');
           document.body.style.setProperty('--text-color', '#000000');
           document.body.style.setProperty('--div-color', '#ffffff');
@@ -54,7 +54,7 @@ function activateControl(controlStat, id){
         }
         else if(themeSet == 1){ // White Theme to Black
           themeSet = 0;
-          $('body').css('background', 'var(--background-color) url("background.png") repeat');
+          $('body').css('background', 'var(--background-color) url("https://i.postimg.cc/fLGtY3V4/background.png") repeat');
           document.body.style.setProperty('--background-color', '#060606');
           document.body.style.setProperty('--text-color', '#ffffff');
           document.body.style.setProperty('--div-color', '#1a1a1a');
