@@ -1,0 +1,52 @@
+h1{
+	font-size: 4vw;
+}
+
+h2{
+	font-size: 3.5vw;
+  font-weight: bold;
+}
+
+h3{
+	font-size: 2vw;
+  font-weight: bold;
+}
+
+p{
+	font-size: 1.5vw;
+}
+
+h1,h2,h3,p{
+	text-align: center;
+}
+
+hr{
+	background-color: var(--grid-color);
+	height: 1px;
+	width: 100%;
+	margin: 0.5vw 0 0.5vw 0;
+}
+
+.hr1{
+	background-color: var(--selected-color);
+	height: 1px;
+	width: 100%;
+	margin: 0.5vw 0 0.5vw 0;
+}
+
+#about{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1vw;
+	width: 80vw;
+	height: 100%;
+	background-color: #00000033;
+}
+
+#instructions{
+	text-align: center;
+}
+
+#instructions i{
+	font-size: 5vw;
+}

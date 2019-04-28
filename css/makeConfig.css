@@ -1,0 +1,257 @@
+#makeMain{
+	background-color: var(--div-color);
+	margin: 0vw auto 1vw auto;
+	width: 74vw;
+	text-align: left;
+	font-size: 1.8vw;
+	align-content: left;
+	padding: 1vw 1.5vw 1.5vw 1.5vw;
+}
+
+h2{
+	font-size: 3.5vw;
+}
+
+h3{
+	font-size: 2.5vw;
+}
+
+h2,h3{
+	text-align: center;
+}
+
+p{
+	font-size: 1.8vw;
+	margin-bottom: 0;
+}
+
+hr{
+	background-color: var(--grid-color);
+	height: 1px;
+	width: 100%;
+	margin: 0.5vw 0 0.5vw 0;
+}
+
+.hr1{
+	background-color: var(--selected-color);
+	height: 1px;
+	width: 100%;
+	margin: 0.5vw 0 0.5vw 0;
+}
+
+li a{
+	text-decoration: none;
+	color: var(--selected-color);
+}
+
+li a:hover{
+	text-decoration: none;
+	color: var(--block-color);
+}
+
+input{
+	background-color: var(--grid-color);
+	border: inset 2px var(--div-color);
+	width: 20vw;
+	margin-right: 1vw;
+	color: var(--text-color);
+}
+
+#btnConfigSet, .addBtn{
+	background-color: var(--grid-color);
+	width: 100%;
+	font-weight: bold;
+	color: var(--text-color);
+	margin-top: 1vw;
+	border: outset 2px var(--grid-color);
+}
+
+#btnConfigSet:hover, .addBtn:hover{
+	background-color: var(--selected-color);
+	color: var(--background-color);
+	border: outset 2px var(--selected-color);
+}
+
+.setForm{
+	width: 100%;
+	padding: 1vw 1vw 1vw 1vw;
+	text-align:center;
+	border: dashed 2px var(--grid-color);
+}
+
+.setForm .row{
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+
+.setForm .col{
+	text-align: right;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.setList{
+	width: 100%;
+	min-height: 2vw;
+	padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+	border: dashed 2px var(--selected-color);
+}
+
+.setForm .chronos{
+	margin-top: 1vw;
+	margin-bottom: 2vw;
+	text-align: left;
+}
+
+#internal{
+	width: 100%;
+	height: 100%;
+	padding-left: 1.3vw;
+	padding-right: 1.3vw;
+}
+
+.Slot{
+	background-color: var(--grid-color);
+  word-break: break-all;
+}
+
+.Slot p{
+	font-size: 1.5vw;
+}
+
+.Slot ~ .Slot{
+	border-top: solid 1px var(--div-color);
+}
+
+.Slot div ~ div{
+	border-left: solid 1px var(--div-color);
+}
+
+.Slot spam ~ spam{
+	border-left: solid 1px var(--div-color);
+}
+
+.Slot .delete{
+	height: 5.78vw;
+	padding: 0 0 0 0;
+	background-color: var(--background-color);
+	color: var(--grid-color);
+	border-left: none 1px var(--div-color);
+}
+
+.Slot .delete:hover{
+	color: var(--text-color);
+	cursor: pointer;
+}
+
+.Slot .delete i{
+	font-size:5vw;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: auto;
+}
+
+.Slot .image{
+	height: 5.78vw;
+	padding: 0 0 0 0;
+	background-color: var(--background-color);
+	color: var(--grid-color);
+}
+
+.Slot .image:hover{
+	color: var(--text-color);
+}
+
+.Slot .image i{
+	font-size:4vw;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: auto;
+}
+
+.Slot .image img{
+	font-size:4vw;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: auto;
+}
+
+
+#setElement .pTitle{
+	text-align:center;
+	border-bottom: solid 2px var(--grid-color);
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-bottom: 0.5vw;
+}
+
+
+.innerSpan{
+	color: var(--grid-color);
+}
+
+#hasChronos{
+	border: inset 2px var(--div-color);
+	height: 3.1vw;
+	width: 4vw;
+	color: var(--div-color);
+	background-color: var(--background-color);
+}
+
+#timeChronos{
+	text-align: center;
+	margin-right: 0;
+	color: var(--grid-color);
+	background-color: var(--div-color);
+}
+
+#resultChronos{
+	border: inset 2px var(--div-color);
+	height: 3.1vw;
+	width: 5vw;
+	color: var(--grid-color);
+	background-color: var(--div-color);
+}
+
+#resultCondition{
+	border: inset 2px var(--div-color);
+	height: 3.1vw;
+	width: 5vw;
+	color: var(--text-color);
+	background-color: var(--win-color);
+}
+
+
+
+/* Classes da tooltip */
+.ttip {
+	color: var(--selected-color);
+	font-size: 1.5vw;
+}
+
+
+/* Classes da time input */
+.without_ampm::-webkit-datetime-edit-ampm-field {
+	display: none;
+}
+input[type=time]::-webkit-clear-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance:none;
+	appearance: none;
+}
+
+.without_ampm::-webkit-datetime-edit-hour-field {
+	display: none;
+}
+
+.without_ampm::-webkit-datetime-edit-text {
+	color: #00000000;
+}

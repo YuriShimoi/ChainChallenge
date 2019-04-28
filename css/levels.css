@@ -1,0 +1,88 @@
+h1{
+	font-size: 4vw;
+}
+
+h2{
+	font-size: 3.5vw;
+  font-weight: bold;
+}
+
+h3{
+	font-size: 2vw;
+  font-weight: bold;
+}
+
+h1,h2,h3,p{
+	text-align: center;
+}
+
+hr{
+	background-color: var(--grid-color);
+	height: 1px;
+	width: 100%;
+	margin: 0.5vw 0 0.5vw 0;
+}
+
+.hr1{
+	background-color: var(--selected-color);
+	height: 1px;
+	width: 100%;
+	margin: 0.5vw 0 0.5vw 0;
+}
+
+#principal{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1vw;
+	width: 80vw;
+	height: 100%;
+	background-color: #00000033;
+}
+
+#levels{
+	margin: 1vw 1vw 1vw 1vw;
+}
+
+.levelGrid{
+	padding: 1vw 1vw 1vw 1vw;
+	height: 8vw;
+}
+
+.levelGrid .level{
+	color: var(--grid-color);
+	margin: 1vw 1vw 1vw 1vw;
+	height: 100%;
+	text-align: left;
+	border: dashed 3px var(--grid-color);
+}
+
+.levelGrid .level .image{
+	height: 100%;
+	width: 100%;
+	padding: 0 0 0 0;
+	background-color: #00000033;
+}
+
+.levelGrid .level .title{
+	color: var(--selected-color);
+	text-align: center;
+	font-size: 1.5vw;
+	margin-bottom: 0;
+}
+
+.levelGrid .level .content{
+	text-align: center;
+	width: 18vw;
+	font-size: 1.2vw;
+}
+
+.level:hover{
+	background-color: var(--div-color);
+	color: var(--text-color);
+	cursor: pointer;
+	border: dashed 3px var(--text-color);
+}
+
+.level:hover .title{
+	color: var(--text-color);
+}

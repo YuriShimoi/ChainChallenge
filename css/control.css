@@ -1,0 +1,64 @@
+/* Classes e IDs da #control */
+
+#navigator{
+	background-color: var(--background-color);
+	margin: 0vw auto 0vw auto;
+	width: 74vw;
+}
+
+#control{
+	background-color: var(--div-color);
+	/* margin: 0vw auto 0vw auto; */
+	width: 35vw;
+	font-size: 3vw;
+	border-top: var(--background-color) double 0.6vw;
+	border-bottom: var(--background-color) double 0.6vw;
+}
+
+#settings{
+	background-color: var(--div-color);
+	/* margin: 0vw auto 0vw auto; */
+	width: 100%;
+	font-size: 3vw;
+	text-align: right;
+	border-top: var(--background-color) double 0.6vw;
+	border-bottom: var(--background-color) double 0.6vw;
+}
+
+.controlButton{
+	margin-left: 1vw;
+	color: var(--controlButton-color);
+}
+  
+.controlButton:hover{
+	color: var(--hover-color);
+	cursor: pointer;
+}
+
+.controlSelected{
+	color: var(--selected-color);
+}
+
+
+/* Classes e IDs do cronometro */
+#timer{
+	background-color: #00000033;
+	position: fixed;
+	top: 0px;
+	left :0px;
+	width: 8vw;
+	height: 3vw;
+	font-size: 2vw;
+	text-align: center;
+	font-weight: bold;
+	border: inset var(--div-color) 2px;
+	text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color), 1px 0 var(--background-color), 0 -1px var(--background-color);
+}
+
+#timer.win{
+	color: var(--win-color);
+}
+
+#timer.lose{
+	color: var(--block-color);
+}

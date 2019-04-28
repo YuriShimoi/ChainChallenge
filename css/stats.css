@@ -1,0 +1,33 @@
+/* Classes e IDs da #stats */
+#stats{
+  background-color: var(--div-color);
+  margin: 0vw auto 1vw auto;
+  width: 74vw;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 0.5vw 5vw 0.1vw 5vw;
+}
+
+#stats h1{
+	text-align: center;
+	font-size: 4vw;
+	margin-bottom: 0;
+}
+
+#stats .hr{
+	background-color: var(--selected-color);
+	height: 1px;
+	width: 100%;
+	margin: 0.5vw 0 0.5vw 0;
+}
+
+#stats .hr2{
+	background-color: var(--grid-color);
+	height: 1px;
+	width: 100%;
+	margin: 0.5vw 0 0.5vw 0;
+}
+
+#stats p{
+	font-size: 2vw;
+}

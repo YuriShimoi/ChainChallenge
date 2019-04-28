@@ -1,0 +1,15 @@
+/* Classes e IDs da #elementDesc */
+#elementDesc{
+  background-color: var(--div-color);
+  margin: 0vw auto 0vw auto;
+  width: 74vw;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  border-top: var(--background-color) double 0.6vw;
+  border-bottom: var(--background-color) double 0.6vw;
+}
+
+.descCheck{
+  color: var(--selected-color);
+}

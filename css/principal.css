@@ -1,0 +1,37 @@
+:root {
+  --background-color: #060606;
+  --text-color: #ffffff;
+  --div-color: #1a1a1a;
+  --grid-color: #333333;
+  --grid-antiColor: #1a1a1a;
+  --gridText-color: #4a4a4a;
+  --hover-color: #ffffff;
+  --selected-color: #1c45ff;
+  --block-color: #b60000;
+  --win-color: #00aa09;
+  --controlButton-color: #333333;
+  --elementBorder-color: #333333;
+}
+
+body{
+  background: var(--background-color) url("../background.png") repeat;
+  color: var(--text-color);
+  padding: 1vw;
+}
+
+img{
+  width: 4vw;
+  height: 4vw;
+}
+
+
+/* Classes e IDs gerais */
+.centerP {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

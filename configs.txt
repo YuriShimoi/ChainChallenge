@@ -1,0 +1,75 @@
+MATERIAL
+  name
+  amount
+  profit
+  autoGen
+ELEMENT
+  name
+  image
+  price
+    [name
+    amount]
+  gain
+    [name
+    amount]
+  spent
+    [name
+    amount]
+  click
+    [name
+    amount]
+CONDITION
+  desc
+  material
+  amount
+  result
+CHRONOMETER
+  time
+  result
+
+
+
+
+Mname
+;Mamount
+;Mprofit
+;MautoGen
+%
+Mname
+;Mamount
+;Mprofit
+;MautoGen
+&
+Ename
+;Eimage
+;Pname:Pamount
+;Gname:Gamount
+;Sname:Samount
+;Cname:Camount
+%
+Ename
+;Eimage
+;Pname:Pamount
+,Pname:Pamount
+;Gname:Gamount
+,Gname:Gamount
+;Sname:Samount
+,Sname:Samount
+;Cname:Camount
+,Cname:Camount
+&
+Cdesc
+;Cmaterial
+;Camount
+;Cresult
+%
+Cdesc
+;Cmaterial
+;Camount
+;Cresult
+&
+CHtime
+;CHresult
+
+
+cookies;50;0;-1&Cookie Maker;<i class="fas fa-cookie"></i>;cookies:0;cookies:0;null:0;cookies:1&Get 100 cookies;cookies;100;win%Less than 10 cookies left;cookies;-10;lose&01:00;lose

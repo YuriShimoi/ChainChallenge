@@ -1,0 +1,39 @@
+/* Classes e IDs da #camp */
+#camp{
+  background-color: var(--div-color);
+  margin: 1vw auto 1vw  auto;
+  width: 74vw; /* 72 > 6x12 */ 
+  height: 38vw; /* 36 > 6x6 */
+  padding: 1vw 1vw 1vw 1vw;
+}
+
+.campGrid{
+  background-color: var(--grid-color);
+  border: dashed 2px var(--div-color);
+  width: 100%;
+  max-width: 6vw;
+  height: 6vw;
+  font-size: 2vw;
+  color: var(--gridText-color);
+  font-weight: bold;
+}
+
+.campGrid:hover{
+  border: dashed 2px var(--hover-color);
+  cursor: pointer;
+}
+
+.gridHide{
+  color: var(--grid-antiColor);
+  background-color: var(--grid-antiColor);
+}
+
+.campSelected{
+  display: inline;
+  border: dashed 2px var(--selected-color);
+}
+
+.hasItem{
+  color: var(--selected-color);
+  font-size: 3vw;
+}
