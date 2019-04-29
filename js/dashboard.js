@@ -53,6 +53,7 @@ $(document).ready(function(){
         if($('#destroy').hasClass('controlSelected') && $(this).hasClass('hasItem')){
           // Destroi item em .campSlot caso exista
           console.log('destroy ' + $(this).attr('itemName') + ' in ' + $(this).attr('id'));
+          particle('-' + $(this).attr('itemName'));
           $(this).attr('itemName','');
           $(this).removeClass('hasItem');
           $(this).find('p').text($(this).attr('id').split('campSlot')[1]);
@@ -65,8 +66,6 @@ $(document).ready(function(){
           else {
             if($(this).hasClass('hasItem')){
               console.log('click on ' + $(this).attr('itemName') + ' in ' + $(this).attr('id'));
-              
-              particle('Click');
 
               for(var i=0; i<ELEMENT.length; i++){
                 if($(this).attr('itemName') == ELEMENT[i].name){
@@ -74,6 +73,7 @@ $(document).ready(function(){
                     for(var k=0; k<MATERIAL.length; k++){
                       if(ELEMENT[i].click[j].name == MATERIAL[k].name){
                         MATERIAL[k].amount += ELEMENT[i].click[j].amount;
+                        particle('+' + ELEMENT[i].click[j].name);
                         break;
                       }
                     }
