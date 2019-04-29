@@ -65,30 +65,13 @@ $(document).ready(function(){
           else {
             if($(this).hasClass('hasItem')){
               console.log('click on ' + $(this).attr('itemName') + ' in ' + $(this).attr('id'));
-              var randX = Math.floor((Math.random() * 20));
-              var randY = Math.floor((Math.random() * 5));
-              var randC = Math.floor((Math.random() * 3));
-              var randColor = '';
-              var randShad = 'black';
-              if(randC == 0)
-                randColor = 'var(--text-color)';
-              if(randC == 1)
-                randColor = 'var(--selected-color)';
-              if(randC == 2){
-                randShad = 'gray';
-                randColor = 'var(--background-color)';
-              }
               
-              $('body').append('<p id="p'+PARTICLES+'" class="particle" style="position:fixed;'
-                                +'top:'+(Mouse.y-25-randY)+'px; left:'+(Mouse.x-25+randX)
-                                +'px; color:'+randColor + '; text-shadow: -1px 0 '+randShad+', 0 1px '+randShad+', 1px 0 '+randShad+', 0 -1px '+randShad+';'
-                                +'z-axis:2; font-weight:bold" particle=10>Click</p>');
-              PARTICLES += 1;
+              particle('Click');
 
               for(var i=0; i<ELEMENT.length; i++){
                 if($(this).attr('itemName') == ELEMENT[i].name){
                   for(var j=0; j<ELEMENT[i].click.length; j++){
-                    for(var k=0; k<MATERIAL.length; j++){
+                    for(var k=0; k<MATERIAL.length; k++){
                       if(ELEMENT[i].click[j].name == MATERIAL[k].name){
                         MATERIAL[k].amount += ELEMENT[i].click[j].amount;
                         break;
