@@ -113,34 +113,24 @@ function fillVariables(){
 	CAMP_HEIGHT = 6;
 }
 
-function fillVariables2(){
-	ELEMENT = [{name:'Bronze Generator',image:'<i class="fas fa-industry"></i>'
-						 ,price:[{name:'Money',amount:100}]
-						 ,gain:[{name:'Money',amount:10},{name:'Bronze',amount:1}]}
-						,{name:'Iron Generator',image:'<i class="fas fa-industry"></i>'
-						 ,price:[{name:'Money',amount:200},{name:'Bronze',amount:50}]
-						 ,gain:[{name:'Money',amount:12},{name:'Iron',amount:1}]}
-						,{name:'Gold Generator',image:'<i class="fas fa-industry"></i>'
-						 ,price:[{name:'Money',amount:300},{name:'Iron',amount:100}]
-						 ,gain:[{name:'Money',amount:15},{name:'Gold',amount:1}]}
-						,{name:'Circuit Generator',image:'<i class="fas fa-wave-square"></i>'
-						 ,price:[{name:'Money',amount:400},{name:'Gold',amount:150}]
-						 ,gain:[{name:'Money',amount:25},{name:'Circuit',amount:5}]}
-						,{name:'Motor Generator',image:'<i class="fas fa-industry"></i>'
-						 ,price:[{name:'Money',amount:500},{name:'Circuit',amount:200}]
-						 ,gain:[{name:'Money',amount:30},{name:'Motor',amount:1}]}
-						,{name:'Battery Generator',image:'<i class="fas fa-car-battery"></i>'
-						 ,price:[{name:'Money',amount:600},{name:'Motor',amount:80}]
-						 ,gain:[{name:'Money',amount:50},{name:'Battery',amount:2}]}]
-	
-	MATERIAL = [{name:'Money', amount:10, profit:0, autoGen:2}
-						 ,{name:'Bronze', amount:0, profit:0, autoGen:0}
-						 ,{name:'Iron', amount:0, profit:0, autoGen:0}
-						 ,{name:'Gold', amount:0, profit:0, autoGen:0}
-						 ,{name:'Circuit', amount:0, profit:0, autoGen:0}
-						 ,{name:'Motor', amount:0, profit:0, autoGen:0}
-						 ,{name:'Battery', amount:0, profit:0, autoGen:0}]
+function particle(text){
+      var randX = Math.floor((Math.random() * 20));
+      var randY = Math.floor((Math.random() * 5));
+      var randC = Math.floor((Math.random() * 3));
+      var randColor = '';
+      var randShad = 'black';
+      if(randC == 0)
+	randColor = 'var(--text-color)';
+      if(randC == 1)
+	randColor = 'var(--selected-color)';
+      if(randC == 2){
+	randShad = 'gray';
+	randColor = 'var(--background-color)';
+      }
 
-	CAMP_WIDTH =  12;
-	CAMP_HEIGHT = 6;
+      $('body').append('<p id="p'+PARTICLES+'" class="particle" style="position:fixed;'
+			+'top:'+(Mouse.y-25-randY)+'px; left:'+(Mouse.x-25+randX)
+			+'px; color:'+randColor + '; text-shadow: -1px 0 '+randShad+', 0 1px '+randShad+', 1px 0 '+randShad+', 0 -1px '+randShad+';'
+			+'z-axis:2; font-weight:bold" particle=10>' + text + '</p>');
+      PARTICLES += 1;
 }
