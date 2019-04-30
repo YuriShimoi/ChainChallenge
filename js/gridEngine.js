@@ -30,9 +30,9 @@ function configureItem(id){
 							 +'\n- GAIN -\n'
 							 +alertGain + '\n'
 			if(alertSpent.split(':')[0] != 'null')
-				msg += '\n- SPENT -\n' + alertSpent
+				msg += '\n- SPENT -\n' + alertSpent + '\n'
 				if(alertClick.split(':')[0] != 'null')
-					msg += '\n\n- CLICK -\n' + alertClick
+					msg += '\n- CLICK -\n' + alertClick
 			alert(msg);
 			break;
 		}
