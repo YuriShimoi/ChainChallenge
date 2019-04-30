@@ -103,7 +103,7 @@ function gameLoop(){
   }
   for(var i=0; i<MATERIAL.length; i++){
     prfId = "#" + MATERIAL[i].name + "Profit";
-    $(prfId).text((MATERIAL[i].profit - MATERIAL[i].spent));
+    $(prfId).text((MATERIAL[i].profit - MATERIAL[i].spent).toFixed(2));
   }
 
   // Atualiza cor da grid dos .elementItem
