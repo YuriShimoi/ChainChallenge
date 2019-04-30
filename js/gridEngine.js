@@ -32,7 +32,7 @@ function configureItem(id){
 			if(alertSpent.split(':')[0] != 'null')
 				msg += '\n- SPENT -\n' + alertSpent
 				if(alertClick.split(':')[0] != 'null')
-					msg += '\n- CLICK -\n' + alertClick
+					msg += '\n\n- CLICK -\n' + alertClick
 			alert(msg);
 			break;
 		}
