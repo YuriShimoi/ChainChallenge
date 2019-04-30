@@ -114,6 +114,9 @@ $(document).ready(function(){
         $('#elementDesc').addClass('descCheck');
       }
     }
+    else if($('#config').hasClass('controlSelected') && $(this).hasClass('elementLock')){
+      configureItem($(this).text());
+    }
   });
 
   gameLoop();
