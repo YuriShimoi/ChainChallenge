@@ -30,11 +30,11 @@ function activateControl(controlStat, id){
 
         var msg = '';
         if(toWin != '')
-          msg += 'How to win:\n' + toWin;
+          msg += 'Win conditions:\n' + toWin;
         else if(toLose != '')
-            msg += 'How to lose:\n' + toLose;
+            msg += 'Lose conditions:\n' + toLose;
         if(toLose != '' && toWin != '')
-          msg += '\nHow to lose:\n' + toLose;
+          msg += '\nLose conditions:\n' + toLose;
         alert(msg);
         break;
       case '#theme':
