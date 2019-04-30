@@ -1,8 +1,13 @@
 // Configura item selecionado na grid
 function configureItem(id){
-	console.log('configure ' + $(id).attr('itemName') + ' in ' + id);
+	var cfgName;
+	if(id[0] == '#')
+		cfgName = $(id).attr('itemName');
+	else
+		cfgName = id;
+	console.log('configure ' + cfgName + ' in ' + id);
 	for(var i=0; i<ELEMENT.length; i++){
-		if($(id).attr('itemName') == ELEMENT[i].name){
+		if(cfgName == ELEMENT[i].name){
 			var alertGain = '';
 			for(var j=0; j<ELEMENT[i].gain.length; j++){
 				alertGain += ELEMENT[i].gain[j].name + ':' + ELEMENT[i].gain[j].amount;
