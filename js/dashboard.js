@@ -114,7 +114,7 @@ $(document).ready(function(){
         $('#elementDesc').addClass('descCheck');
       }
     }
-    else if($('#config').hasClass('controlSelected') && $(this).hasClass('elementLock')){
+    else if($('#config').hasClass('controlSelected')){
       configureItem($(this).text());
     }
   });
